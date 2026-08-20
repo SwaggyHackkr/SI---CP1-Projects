@@ -16,3 +16,5 @@ print("Sorry I meant "+ name)
 
 # another variable example
 age = 10
+
+print("You are 15")
