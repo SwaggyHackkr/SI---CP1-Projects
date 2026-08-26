@@ -9,7 +9,7 @@
 # name, age, hobby, hometown.
 
 
-#I well also be using inputs to grab the information out of them.
+#I will also be using inputs to grab the information out of them.
 
         #inputs 
     #name = input("What is your name: ")
