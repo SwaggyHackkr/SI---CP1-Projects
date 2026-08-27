@@ -15,6 +15,7 @@
     #name = input()
     #age = input()
     #hobby = input()
+    #job = input()
     #hometown = input()     
     
 
