@@ -6,7 +6,7 @@ def get_grade(prompt):
             grade = float(input(prompt))
             return grade
         except ValueError:
-            print("Invalid input. Please enter a numeric value.")
+            print("Invalid input. Please enter a valid number.")
 
 
 #Get grades for all 7 class periods
