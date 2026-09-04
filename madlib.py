@@ -1,17 +1,15 @@
 #Salesi Ilaoa, Period 1, Madlib Assignment
 
 
-# Inputs for the adlib
-adjective = input("Enter the adjective: ")
-animal = input("Enter any animal: ")
-adjective2 = input("Enter adjective: ")
-noun = input("Enter a noun: ")
-verb = input("Enter a verb: ")
-adverb = input("Enter a adverb: ")s
-adjective3 = input("Enter the adjective: ")
+# Get all 5 inputs at the beginning
+noun1 = input("Enter a noun: ")
+adjective1 = input("Enter an adjective: ")
+noun2 = input("Enter another noun: ")
+verb1 = input("Enter a verb: ")
+place = input("Enter a place: ")
 
+# Build the story using string concatenation
+story = "Once upon a time, there was a " + adjective1 + " " + noun1 + " who loved to " + verb1 + " in " + place + ". " " The " + noun1 + " would " + verb1 + " every single day while eating a giant " + noun2 + ". " "One day, the " +adjective1 + " " + noun1 + " discovered a golden " + noun2 + " in " + place + ". " " Everyone in " + place + " cheered for the " + adjective1 + " " + noun2 + " and the golden " + noun2 + ". "
 
-# Now it will print the the inputs into the adlib below with the inputs displayed
-
-print("Today, I went to the zoo with my " + (adjective) + " We saw a giant " + (animal) + " eating a " + (adjective2) + (noun) + "" + " Suddenly, the creature started to " + (verb) + " very loudly!" + " All the people waiting in line began to " + (adverb) + " and laugh" )
-print("It was the most " + (adjective3) + " day of my life! " + " Because of this I went to " + (noun) + " and saw the same " + (animal) + "!")
+#Print the story
+print(story)
