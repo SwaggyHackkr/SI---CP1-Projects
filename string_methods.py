@@ -1,4 +1,4 @@
-# SI, String Methods
+"""# SI, String Methods
 
 sentence = "The quick brown fox jumps over the lazy dog"
 
@@ -29,15 +29,15 @@ last_fix = "".join(last_seperated)
 full_name = fixed.title() + " " + last_fix.title()
 print("Hello " + full_name.title())
 
-print(full_name.isalpha())
-print(full_name.isupper())
-print(full_name.isnumeric())
+print(full_name.isalpha()) #Checks to make sure the entire thing is characters
+print(full_name.isupper()) #Checks to make sure the entire thing is uppercase
+print(full_name.isnumeric()) #Checks to make sure the entire thing is numeric/numbers
 
 print(sentence.split('the'))
 
-print(sentence.lower())
-print(sentence.upper())
-print(sentence.capitalize())
+print(sentence.lower()) #makes watever it is lowercase
+print(sentence.upper()) #makes whatever it is uppercase
+print(sentence.capitalize()) #makes the first word sentence capitalize 
 print(sentence.title())
 print(fixed)
 # It is all about the outputs above because our user is 50% stupid
@@ -54,3 +54,15 @@ print(fixed)
 # fix - fixes something
 
 # Split
+
+#Formatted strings helps us take us how our strings appear
+
+print(f"Hello {full_name.title()} welcome to my code!")"""
+
+
+letter = input("Give me a letter: ")
+letter = letter[0]
+number_value = ord(letter)
+number_value += 2
+new_letter = chr(number_value)
+print(f"Your letter was {letter} now it is {new_letter}")
