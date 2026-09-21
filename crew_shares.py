@@ -9,7 +9,8 @@
 #SET sent away units TO other crew Mulitiplied by 3
 #SET remaining units TO total units - sent away units
 
-#SET Yondu share TO ROUND remaining units mulitplied 0.13, 2
+#SET Yondu share TO ROUND remaining units  0.13, 2
+#Yondu share is rounding the remaining units to 0,13
 #UPDATE remaining units TO remaining units minus Yondu share
 
 #SET Peter share TO ROUND remaining units multiplied 0.11, 2
@@ -22,3 +23,26 @@
 #OUTPUT "Peter's share: " Peter share
 #OUTPUT "Crew's share: " crew share
 #END
+
+import random
+
+pirates = int(input("How many pirates: "))
+
+total_units = random.randint(500, 5000)
+
+other_crew = pirates - 2
+sent_away_units = other_crew * 3
+remaining_units = total_units - sent_away_units
+
+yondu_share = round(remaining_units * 0.13, 2)
+remaining_units = remaining_units - yondu_share
+
+peter_share = round(remaining_units * 0.11, 2)
+remaining_units = remaining_units - peter_share
+
+crew_share = round(remaining_units / pirates, 2)
+
+print(f"Units found: {total_units}")
+print(f"Yondu's share: {yondu_share:.2f}")
+print(f"Peter's share: {peter_share:.2f}")
+print(f"Crew's share: {crew_share:.2f}")

@@ -53,7 +53,7 @@ print(fixed)
 
 # fix - fixes something
 
-# Split
+# Split - "it splits each character into its own thing" - Daniel
 
 #Formatted strings helps us take us how our strings appear
 
