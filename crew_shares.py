@@ -26,23 +26,27 @@
 
 import random
 
-pirates = int(input("How many pirates: "))
+while True:
+    try:
+        pirates = int(input("How many pirates besides yondu and quill: ")) 
+    except ValueError:
+        print("Enter a valid number!")
+    else:
+        break
 
 total_units = random.randint(500, 5000)
 
-other_crew = pirates - 2
-sent_away_units = other_crew * 3
-remaining_units = total_units - sent_away_units
+other_crew = pirates + 2
 
-yondu_share = round(remaining_units * 0.13, 2)
-remaining_units = remaining_units - yondu_share
+yondu_share = round(total_units * 0.13, 2)
+remaining_units = total_units - yondu_share
 
 peter_share = round(remaining_units * 0.11, 2)
 remaining_units = remaining_units - peter_share
 
-crew_share = round(remaining_units / pirates, 2)
+crew_share = round(remaining_units / other_crew, 2)
 
 print(f"Units found: {total_units}")
-print(f"Yondu's share: {yondu_share:.2f}")
-print(f"Peter's share: {peter_share:.2f}")
+print(f"Yondu's share: {yondu_share + crew_share:.2f}")
+print(f"Peter's share: {peter_share+crew_share:.2f}")
 print(f"Crew's share: {crew_share:.2f}")
